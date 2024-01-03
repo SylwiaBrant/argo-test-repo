@@ -6,10 +6,8 @@ resources:
 patches:
   - target:
       kind: ConfigMap
-      group: ""
-      version: v1
       name: test-kustomize
     patch: |-
       - op: replace
-        path: /data
+        path: /data/value
         value: dXNlcgo=
